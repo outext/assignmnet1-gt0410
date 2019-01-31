@@ -17,8 +17,10 @@ def download(g):
     soup = BeautifulSoup(response.content, "html.parser")
     tags = soup.find_all(tag that you want to parse through)
     # TODO add code here
+    total = ""
+    for tag in tags:
+        total = total + tag
     return (total)
-
 
 def tokenize(a):
     """ This function downloads gives you tokenized words ."""
@@ -71,8 +73,6 @@ if __name__ == '__main__':
 #Download the package as per requirements using nltk.download(). We tend to download only the packages that we require since since its nltk repository is more than 2 GB.
 
 #Nexr word_tokenize.py
-
-
 
 
 
